@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/experiencias.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Learn Together</title>
+</head>
+<body>
+<header>
+    <div class="encabezado">
+        <a href="index.html" class="logo-link">
+            <img src="img/logoLT.png" class="logo">
+            <h1>Learn Together</h1>
+        </a>
+    </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="nav">
+        <a href="nosotros.html"><i class="fa-solid fa-users"></i> Nosotros</a>
+        <a href="campus.html"><i class="fa-solid fa-laptop"></i>Campus Virtual</a>
+        <a href="experiencias.html" class="activo"><i class="fa-solid fa-star"></i>Experiencias</a>
+        <a href="planes.html"><i class="fa-solid fa-tags"></i>Planes</a>
+    </nav>
+</header>
+
+<a href="https://api.whatsapp.com/send?phone=5551731629" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<div class="banner">
+    <img src="img/experiencias.png" alt="Banner">
+</div>
+
+<section class="texto-ex">
+    <div class="descrip">
+        <h3>Vive experiencias reales</h3>
+        <p>En Learn Together creemos que aprender inglés va más allá del salón de clases. Nuestros alumnos participan en actividades, proyectos, eventos y dinámicas que les permiten practicar el idioma de forma natural, divertida y significativa.</p>
+    </div>
+</section>
+
+<section class="videos-destacados">
+    <div class="titulo-videos">
+        <h2>Videos destacados</h2>
+    </div>
+    <div class="videos-grid">
+        <div class="vi-card">
+            <video controls poster="img/portadarojo.jpeg">
+                <source src="videos/alumnacertificada.mp4" type="video/mp4">
+            </video>
+            <div class="vi-info">
+                <h3>Experiencia: Alumna Certificada</h3>
+            </div>
+        </div>
+        <div class="vi-card">
+            <video controls poster="img/portadaamarillo.jpeg">
+                <source src="videos/miexperiencia.mp4" type="video/mp4">
+            </video>
+            <div class="vi-info">
+                <h3>Mi experiencia en Learn Together</h3>
+            </div>
+        </div>
+        <div class="vi-card">
+            <video controls poster="img/portadaverde.jpeg">
+                <source src="videos/experienciareales.mp4" type="video/mp4">
+            </video>
+            <div class="vi-info">
+                <h3>Experiencias reales</h3>
+            </div>
+        </div>
+        <div class="vi-card">
+            <video controls poster="img/portadaazul.jpeg">
+                <source src="videos/ex1prof.mp4" type="video/mp4">
+            </video>
+            <div class="vi-info">
+                <h3>Un día con el teacher Eduardo en Learn Together</h3>
+            </div>
+        </div>
+    </div>
+    <div class="controles-videos">
+        <button id="prevVideo">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button id="nextVideo">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div> 
+</section>
+
+<section class="experiencias">
+    <div class="titulo-exp">
+        <h2>Experiencias y actividades</h2>
+        <div class="filtros">
+            <button class="filtro active" onclick="mostrarGaleria('excursiones',this)">Excursiones</button>
+            <button class="filtro" onclick="mostrarGaleria('graduaciones',this)">Graduaciones</button>
+            <button class="filtro" onclick="mostrarGaleria('cierre',this)">Cierre de Nivel</button>
+            <button class="filtro" onclick="mostrarGaleria('proyectos',this)">Proyectos</button>
+            <button class="filtro" onclick="mostrarGaleria('extras',this)">Extra</button>
+        </div>
+    </div>
+    <div class="galeria" id="galeria">
+        <img src="img/ex1.jpg" class="grande">
+        <img src="img/ex2.jpg">
+        <img src="img/ex3.jpg">
+        <img src="img/ex4.jpg" class="grande">
+        <img src="img/ex5.jpg">
+        <img src="img/ex6.jpg">
+    </div>
+</section>
+
+<section class="comentarios">
+    <div class="titulo-comentarios">
+        <h2>Lo que viven nuestros estudiantes</h2>
+        <p>Historias reales de alumnos que aprendieron inglés viviendo experiencias únicas con Learn Together.</p>
+    </div>
+    <div class="slider-com">
+        <button class="atras">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="contenedor-slider">
+            <div class="contenedor-comentarios">
+                <div class="card-com">
+                    <div class="img-com">
+                        <img src="img/icon.jpg">
+                    </div>
+                    <div class="info-com">
+                        <h3>Monse Romero</h3>
+                        <span>Básico A2</span>
+                        <p>Llevo 3 meses estudiando en Learn Together y estoy muy feliz con los resultados que he obtenido...</p>
+                    </div>
+                </div>
+                <div class="card-com">
+                    <div class="img-com">
+                        <img src="img/ic.jpg">
+                    </div>
+                    <div class="info-com">
+                        <h3>Alex Martínez</h3>
+                        <span>Intermedio 1</span>
+                        <p>Estudiar en Learn Together ha sido una gran experiencia...</p>
+                    </div>
+                </div>
+                <div class="card-com">
+                    <div class="img-com">
+                        <img src="img/ic.jpg">
+                    </div>
+                    <div class="info-com">
+                        <h3>Axel Palmer</h3>
+                        <span>Intermedio 2</span>
+                        <p>Las clases son bastantes dinámicas...</p>
+                    </div>
+                </div>
+                <div class="card-com">
+                    <div class="img-com">
+                        <img src="img/ic.jpg">
+                    </div>
+                    <div class="info-com">
+                        <h3>Carlos Aldair Becerra Cuevas</h3>
+                        <span>Avanzado</span>
+                        <p>En general es una gran escuela, siempre busca el progreso del estudiante...</p>
+                    </div>
+                </div>
+                <div class="card-com">
+                    <div class="img-com">
+                        <img src="img/i.jpg">
+                    </div>
+                    <div class="info-com">
+                        <h3>Regina Hernández</h3>
+                        <span>Intermedio 2</span>
+                        <p>Lo que más me gusta de Learn Together es que cada clase me motiva a seguir aprendiendo...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="adelante">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+</section>
+
+<div class="ban">
+    <img src="img/punto.jpg" alt="Ban">
+    <div class="contenido-banner">
+        <div class="texto-banner">
+            <h2>¡Forma parte de nuestra comunidad!</h2>
+            <p>Descubre una nueva manera de aprender inglés a través de experiencias reales, actividades interactivas y eventos especiales.</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal-cont" id="modalCont">
+    <div class="cont-box">
+        <button class="cerrar" onclick="cerrarContacto()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <h2>Contáctanos</h2>
+        <p>Elige el medio de contacto que prefieras. ¡Será un gusto atenderte!</p>
+        <div class="opciones-contacto">
+            <a href="https://wa.me/521234567890" target="_blank" class="contacto-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <h3>WhatsApp</h3>
+                    <span>+52 123 456 7890</span>
+                </div>
+            </a>
+            <a href="tel:+521234567890" class="contacto-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <h3>Teléfono</h3>
+                    <span>(123) 456 7890</span>
+                </div>
+            </a>
+            <a href="mailto:contacto@learntogether.com" class="contacto-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <h3>Correo</h3>
+                    <span>contacto@learntogether.com</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <p>© 2026 Learn Together - Todos los derechos reservados</p>
+        <div class="footer-links">
+            <a href="#">Ubicación</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const menu=document.querySelector(".menu-toggle");
+    const nav=document.querySelector(".nav");
+    menu.onclick=()=>{
+        nav.classList.toggle("active");
+        menu.innerHTML=nav.classList.contains("active")
+        ?'<i class="fa-solid fa-xmark"></i>'
+        :'<i class="fa-solid fa-bars"></i>';
+    }
+    document.querySelectorAll(".nav a").forEach(link=>{
+        link.onclick=()=>{
+            nav.classList.remove("active");
+            menu.innerHTML='<i class="fa-solid fa-bars"></i>';
+        }
+    });
+</script>
+
+<script>
+const galerias = {
+excursiones:[
+"img/ex1.jpg",
+"img/ex2.jpg",
+"img/ex3.jpg",
+"img/ex4.jpg",
+"img/ex5.jpg",
+"img/ex6.jpg"
+],
+graduaciones:[
+"img/gr1.jpg",
+"img/gr2.jpg",
+"img/gr3.jpg",
+"img/gr4.jpg",
+"img/gr5.jpg",
+"img/gr6.jpg"
+],
+cierre:[
+"img/ni1.jpg",
+"img/ni2.jpg",
+"img/ni3.jpg",
+"img/ni4.jpg",
+"img/ni6.jpg",
+"img/ni5.jpg"
+],
+proyectos:[
+"img/po1.jpg",
+"img/po2.jpg",
+"img/po3.jpg",
+"img/po4.jpg",
+"img/po5.jpg",
+"img/po6.jpg"
+],
+extras:[
+"img/fe1.jpg",
+"img/fe2.jpg",
+"img/fe3.jpg",
+"img/fe4.jpg",
+"img/fe5.jpg",
+"img/fe6.jpg"
+]
+};
+
+function mostrarGaleria(tipo, boton){
+const galeria = document.getElementById("galeria");
+galeria.innerHTML="";
+galerias[tipo].forEach((img,index)=>{
+const clase = (index === 0 || index === 3)
+? "grande" : "";
+galeria.innerHTML +=
+`<img src="${img}" class="${clase}">`;
+});
+document.querySelectorAll(".filtro").forEach(btn =>
+btn.classList.remove("active"));
+boton.classList.add("active");
+}
+</script>
+
+<script>
+const contenedorCom = document.querySelector(".contenedor-comentarios");
+const sliderCom = document.querySelector(".contenedor-slider");
+const btnAtras = document.querySelector(".slider-com .atras");
+const btnAdelante = document.querySelector(".slider-com .adelante");
+let posicion = 0;
+function obtenerMovimiento() {
+    const tarjeta = document.querySelector(".card-com");
+    return tarjeta.offsetWidth + 30;
+}
+function actualizarBotones() {
+    const max = contenedorCom.scrollWidth - sliderCom.clientWidth;
+    btnAtras.style.opacity = posicion <= 0 ? ".4" : "1";
+    btnAtras.disabled = posicion <= 0;
+    btnAdelante.style.opacity = posicion >= max ? ".4" : "1";
+    btnAdelante.disabled = posicion >= max;
+}
+btnAdelante.addEventListener("click", () => {
+    const max = contenedorCom.scrollWidth - sliderCom.clientWidth;
+    posicion += obtenerMovimiento();
+    if (posicion > max) posicion = max;
+    contenedorCom.style.transform = `translateX(-${posicion}px)`;
+    actualizarBotones();
+});
+btnAtras.addEventListener("click", () => {
+    posicion -= obtenerMovimiento();
+    if (posicion < 0) posicion = 0;
+    contenedorCom.style.transform = `translateX(-${posicion}px)`;
+    actualizarBotones();
+});
+window.addEventListener("resize", () => {
+    posicion = 0;
+    contenedorCom.style.transform = "translateX(0)";
+    actualizarBotones();
+});
+actualizarBotones();
+
+const videos = document.querySelectorAll(".vi-card");
+const prevVideo = document.querySelector("#prevVideo");
+const nextVideo = document.querySelector("#nextVideo");
+let indiceVideo = 0;
+function mostrarVideo(){
+    if(window.innerWidth > 768){
+        videos.forEach(v=>{
+            v.style.display="block";
+        });
+        if(prevVideo){
+            prevVideo.style.display="none";
+            nextVideo.style.display="none";
+        }
+    return;
+    }
+
+    videos.forEach(video=>{
+        video.style.display="none";
+    });
+
+    videos[indiceVideo].style.display="block";
+
+    if(prevVideo){
+        prevVideo.style.display="flex";
+        prevVideo.disabled = indiceVideo===0;
+    }
+
+    if(nextVideo){
+        nextVideo.style.display="flex";
+        nextVideo.disabled = indiceVideo===videos.length-1;
+    }
+}
+
+if(nextVideo){
+nextVideo.addEventListener("click",()=>{
+    if(indiceVideo<videos.length-1){
+        indiceVideo++;
+        mostrarVideo();
+    }
+});
+}
+
+if(prevVideo){
+prevVideo.addEventListener("click",()=>{
+    if(indiceVideo>0){
+        indiceVideo--;
+        mostrarVideo();
+    }
+});
+}
+
+window.addEventListener("resize",mostrarVideo);
+mostrarVideo();
+
+const testimonios = document.querySelectorAll(".video-card");
+const prevTestimonio = document.getElementById("prevTestimonio");
+const nextTestimonio = document.getElementById("nextTestimonio");
+let indiceTestimonio = 0;
+function mostrarTestimonio(){
+    if(window.innerWidth > 768){
+        testimonios.forEach(t=>{
+            t.style.display="block";
+        });
+
+        if(prevTestimonio){
+            prevTestimonio.style.display="none";
+            nextTestimonio.style.display="none";
+        }
+        return;
+    }
+    testimonios.forEach(t=>{
+        t.style.display="none";
+    });
+
+    testimonios[indiceTestimonio].style.display="block";
+
+    if(prevTestimonio){
+        prevTestimonio.style.display="flex";
+        prevTestimonio.disabled = indiceTestimonio===0;
+    }
+
+    if(nextTestimonio){
+        nextTestimonio.style.display="flex";
+        nextTestimonio.disabled = indiceTestimonio===testimonios.length-1;
+    }
+}
+
+if(nextTestimonio){
+nextTestimonio.addEventListener("click",()=>{
+    if(indiceTestimonio<testimonios.length-1){
+        indiceTestimonio++;
+        mostrarTestimonio();
+    }
+});
+}
+
+if(prevTestimonio){
+prevTestimonio.addEventListener("click",()=>{
+    if(indiceTestimonio>0){
+        indiceTestimonio--;
+        mostrarTestimonio();
+    }
+});
+}
+window.addEventListener("resize",mostrarTestimonio);
+mostrarTestimonio();
+
+function abrirContacto(){
+    document.getElementById("modalContacto").classList.add("active");
+}
+function cerrarContacto(){
+    document.getElementById("modalContacto").classList.remove("active");
+}
+
+function abrirInfo(){
+    document.getElementById("modalInfo").classList.add("activo");
+}
+
+function cerrarInfo(){
+    document.getElementById("modalInfo").classList.remove("activo");
+}
+
+window.addEventListener("click", function(e){
+    const modal = document.getElementById("modalInfo");
+    if(e.target === modal){
+        cerrarInfo();
+    }
+});
+</script>
+</body>
+</html>

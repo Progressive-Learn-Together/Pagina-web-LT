@@ -1,0 +1,385 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+  padding-top: 80px;
+}
+
+.ubicacion{
+  width:100%;
+  min-height:100vh;
+  position: relative;
+  overflow: hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px 40px;
+}
+
+.fondo-html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.capa-oscura {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 2;
+}
+
+.contenedor{
+  width:100%;
+  max-width:1300px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  position: relative;
+  z-index: 3;
+}
+
+.info{
+  color:white;
+  backdrop-filter:blur(2px);
+}
+
+.subtitulo{
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:10px;
+}
+
+.titulo{
+  font-size:70px;
+  font-weight:800;
+  line-height:1;
+  margin-bottom:40px;
+}
+
+.bloque{
+  margin-bottom:35px;
+}
+
+.bloque h3{
+  font-size:25px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.bloque p,
+.bloque a{
+  color:#f4c542;
+  font-size:20px;
+  line-height:1.6;
+  text-decoration:none;
+}
+
+.icono{
+  color:#f4c542;
+}
+
+.sociales{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.sociales a{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#f4c542;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.sociales a:hover{
+  color:white;
+  transform:translateX(30px);
+}
+
+.sociales i{
+  font-size:22px;
+}
+
+.mapa h2{
+  color:rgb(255, 255, 255);
+  font-size:45px;
+  font-weight:800;
+  margin-bottom:30px;
+}
+
+.mapa iframe{
+  width:100%;
+  height:450px;
+  border:none;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+.btn-mapa{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:#f4c542;
+  color:black;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:700;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.btn-mapa:hover{
+  background:white;
+  transform:scale(1.05);
+}
+
+.btn-wsp{
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  bottom: 30px;
+  right: 30px;
+  background: #00c753;
+  color: #ffffff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.btn-wsp:hover{
+  text-decoration: none;
+  color:#00c753;
+  background: #ffffff;
+}
+
+header{
+  background-color: #12024b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.614);
+}
+
+.encabezado{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo{
+  width: 55px;
+  height: 55px;
+}
+
+.logo-link{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: white;
+}
+
+.encabezado h1{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  transform: scale(1.08);
+}
+
+.btn-login {
+  background-color: #d50000;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #b00000;
+  color: white;
+  transform: scale(1.05);
+}
+
+.quiz-box {
+  width: 100%;
+  max-width: 500px; 
+  background-color: rgba(26, 42, 92, 0.85); 
+  backdrop-filter: blur(5px); 
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+}
+
+#menu-toggle,
+.menu-btn,
+.nav-overlay {
+  display: none;
+}
+
+@media(max-width: 992px) {
+  header {
+    padding: 15px 25px;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+  .menu-btn .cerrar-menu {
+    display: none;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: #12024b;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 100px 30px 40px 30px;
+    gap: 25px;
+    transition: right 0.4s ease;
+    z-index: 1001;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav a {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-login {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 14px;
+  }
+
+  .nav-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .nav {
+    right: 0;
+  }
+
+  #menu-toggle:checked ~ .nav-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #menu-toggle:checked ~ .menu-btn .abrir-menu {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .menu-btn .cerrar-menu {
+    display: block;
+  }
+}
+
+@media(max-width: 768px) {
+  .ubicacion{
+    padding:40px 20px;
+  }
+  .contenedor {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .titulo{
+    font-size:38px;
+  }
+  .mapa h2{
+    font-size:32px;
+  }
+  .bloque p,
+  .bloque a,
+  .sociales a{
+    font-size:17px;
+  }
+  .mapa iframe{
+    height:320px;
+  }
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Learn Together</title>
+</head>
+<body>
+<header>
+    <div class="encabezado">
+    <a href="index.html" class="logo-link">
+        <img src="img/logoLT.png" class="logo">
+        <h1>Learn Together</h1>
+    </a>
+    </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav class="nav">
+        <a href="nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a>
+        <a href="campus.html"><i class="fa-solid fa-laptop"></i>Campus Virtual</a>
+        <a href="experiencias.html"><i class="fa-solid fa-star"></i>Experiencias</a>
+        <a href="planes.html"><i class="fa-solid fa-tags"></i>Planes</a>
+    </nav>
+</header>
+<a href="https://api.whatsapp.com/send?phone=5551731629" class="btn-wsp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<div class="banner">
+    <img src="img/campus.png" alt="Banner">
+    <div class="contenido-banner">
+    <h2>Tu aprendizaje,<br>
+        <span>donde y cuando quieras.</span>
+    </h2>
+    <p>
+        Un espacio diseñado para aprender inglés de manera
+        práctica, flexible y efectiva.
+    </p>
+
+    <div class="beneficios-banner">
+        <div class="beneficio">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <h4>Clases en vivo</h4>
+            <span>
+                Interactúa en tiempo real con profesores y compañeros.
+            </span>
+        </div>
+
+        <div class="beneficio">
+            <i class="fa-solid fa-book-open"></i>
+            <h4>Materiales interactivos</h4>
+            <span>
+                Actividades dinámicas para reforzar cada habilidad.
+            </span>
+        </div>
+
+        <div class="beneficio">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Seguimiento</h4>
+            <span>
+                Monitorea tu progreso y continúa aprendiendo.
+            </span>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+<section class="niveles">
+    <div class="titulo-niveles">
+        <h2>Niveles</h2>
+        <div class="linea"></div>
+    </div>
+    <div class="contenedor-niveles">
+        <div class="cards-niveles">
+            <div class="nivel active" onclick="cambiarNivel('BASICO1')">
+                <h3>Básico 1</h3>
+                <p>A1</p>
+            </div>
+            <div class="nivel" onclick="cambiarNivel('BASICO2')">
+                <h3>Básico 2</h3>
+                <p>A1</p>
+            </div>
+            <div class="nivel" onclick="cambiarNivel('INTER1')">
+                <h3>Intermedio 1</h3>
+                <p>A2</p>
+            </div>
+            <div class="nivel" onclick="cambiarNivel('INTER2')">
+                <h3>Intermedio 2</h3>
+                <p>A2</p>
+            </div>
+            <div class="nivel" onclick="cambiarNivel('AVAN1')">
+                <h3>Avanzado 1</h3>
+                <p>B1</p>
+            </div>
+            <div class="nivel" onclick="cambiarNivel('AVAN2')">
+                <h3>Orientado a</h3>
+                <p>Certificaciones</p>
+            </div>
+        </div>
+
+        <div class="info-nivel">
+        <span id="etiqueta">A1</span>
+        <h3 id="titulo">BÁSICO 1</h3>
+        <p id="descripcion">
+        Curso introductorio para desarrollar las primeras habilidades de comunicación en inglés mediante vocabulario y estructuras básicas.
+        </p>
+        <ul id="lista">
+        <li>- Duración: 6 meses</li>
+        <li>- Modalidad: Presencial u Online</li>
+        </ul>
+        <div class="boton">
+        <button class="btn"><a href="planes.html">Ver planes →</a></button></div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="modalidades">
+    <div class="waves">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+		<defs>
+			<linearGradient id="bg">
+				<stop offset="0%" style="stop-color:rgba(126, 156, 255, 0.821)"></stop>
+				<stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+				<stop offset="100%" style="stop-color:rgba(72, 138, 209, 0.473)"></stop>
+			</linearGradient>
+			<path id="wave"fill="url(#bg)"d="M-363.852,350c0,0,236.988,-80,505.475,0s371.981,80,575.971,0s293.985,-80,505.474,0s493.475,80,716.963,0v700H-363.852Z"/>
+		</defs>
+		<g>
+			<use xlink:href='#wave' opacity=".3">
+				<animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="10s"
+            calcMode="spline"
+            values="270 230; -334 180; 270 230"
+            keyTimes="0; .5; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacity=".6">
+				<animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="8s"
+            calcMode="spline"
+            values="-270 230;243 220;-270 230"
+            keyTimes="0; .6; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacty=".9">
+				<animateTransform
+            attributeName="transform"
+            attributeType="XML"
+            type="translate"
+            dur="6s"
+            calcMode="spline"
+            values="0 230;-140 200;0 230"
+            keyTimes="0; .4; 1"
+            keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+            repeatCount="indefinite" />
+			</use>
+		</g>
+	</svg>
+    </div>
+    <div class="titulo-modalidades">
+        <h2>Modalidades diseñadas para ti</h2>
+        <p>
+            Aprende inglés de la forma que mejor se adapte
+            a tu ritmo, tiempo y objetivos.
+        </p>
+    </div>
+    <div class="contenedor-modalidades">
+        <div class="card-modal active">
+            <div class="icon-modal">
+                <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="info-modal">
+                <h3>Presencial</h3>
+                <p>Aprende con el acompañamiento directo de docentes personalizados.</p>
+            </div>
+        </div>
+        <div class="card-modal">
+            <div class="icon-modal">
+                <i class="fa-solid fa-laptop"></i>
+            </div>
+            <div class="info-modal">
+                <h3>Online</h3>
+                <p>Conéctate desde cualquier lugar y participa en clases en tiempo real.</p>
+            </div>
+        </div>
+        <div class="card-modal">
+            <div class="icon-modal">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="info-modal">
+                <h3>Personalizada</h3>
+                <p>Recibe un plan de aprendizaje adaptado a tus objetivos y ritmo de estudio.</p>
+            </div>
+        </div>
+        <div class="card-modal">
+            <div class="icon-modal">
+                <i class="fa-solid fa-building"></i>
+            </div>
+            <div class="info-modal">
+                <h3>Empresa</h3>
+                <p>Capacitación para empresas con programas adaptados a las necesidades de cada equipo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="certificaciones">
+    <div class="cert-texto">
+        <span>Preparación para Certificaciones</span>
+        <h2>Prepárate para alcanzar tus metas internacionales</h2>
+        <p>En Learn Together te brindamos la preparación y orientación necesarias
+            para presentar certificaciones internacionales de inglés, fortaleciendo
+            tus conocimientos y aumentando tus oportunidades académicas y
+            profesionales.</p>
+            <a href="#" class="btn-cert" id="abrirCertificaciones">Conoce más →</a>
+    </div>
+
+    <div class="certificados">
+        <div class="cert-card">
+            <img src="img/TOEFL.jpg" alt="TOEFL">
+            <h3>TOEFL®</h3>
+            <p>Te preparamos para presentar esta certificación enfocada en el inglés
+                académico y universitario.</p>
+        </div>
+
+        <div class="cert-card" onclick="abrirToeic()">
+            <img src="img/TOEIC.jpg" alt="TOEIC">
+            <h3>TOEIC®</h3>
+            <p>Te orientamos para presentar esta certificación reconocida en el ámbito
+                laboral y profesional.</p>
+        </div>
+    </div>
+    <div class="modal-cert" id="modalCert">
+    <div class="contenido-modal">
+        <span class="cerrar-modal">&times;</span>
+        <h2>Certificaciones Internacionales</h2>
+        <p class="subtitulo">
+            En Learn Together te orientamos y preparamos para presentar
+            certificaciones reconocidas internacionalmente.
+        </p>
+        <div class="comparacion-cert">
+            <div class="cert-box">
+                <img src="img/TOEFL.jpg">
+                <h3><b>¿Por qué certificarte?</b><br></h3>
+                    <ul>Obtener una certificación internacional de inglés te permite demostrar de manera oficial tus conocimientos y habilidades en el idioma. Además de respaldar tu nivel, fortalece tu perfil académico y profesional, brindándote mayores oportunidades para acceder a universidades, programas de intercambio, becas y mejores oportunidades laborales tanto a nivel nacional como internacional.</ul>
+            </div>
+            <div class="cert-box">
+                <img src="img/TOEIC.jpg">
+                <h3><b>¿Cómo te preparamos?</b></h3>
+                <ul>Te acompañamos durante todo el proceso de preparación mediante una metodología enfocada en el desarrollo de las habilidades evaluadas en cada certificación. Nuestros docentes te guiarán con clases especializadas, material de práctica, simulacros de examen y estrategias para que llegues con mayor seguridad y confianza el día de tu evaluación. Nuestro objetivo es que desarrolles las competencias necesarias para obtener un desempeño exitoso en la certificación que elijas.</ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-cert" id="modalToeic">
+    <div class="modal-contenido">
+        <span class="cerrar-modal" onclick="cerrarToeic()">&times;</span>
+        <h2>Certificación TOEIC®</h2>
+
+        <p class="subtitulo">
+            Demuestra tu nivel de inglés para el ámbito laboral y profesional.
+        </p>
+        <div class="tabs-toeic">
+            <button class="tab active" onclick="cambiarTab('dos')">
+                TOEIC 2 Skills
+            </button>
+
+            <button class="tab" onclick="cambiarTab('cuatro')">
+                TOEIC 4 Skills
+            </button>
+        </div>
+        <div class="contenido-tab activo" id="dos">
+
+            <div class="encabezado-cert">
+                <img src="img/toeic2.png" alt="">
+                <div>
+                    <h3>Listening & Reading</h3>
+                    <p>Evalúa comprensión auditiva y comprensión lectora.</p>
+                </div>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Habilidades</th>
+                    <td>Listening y Reading</td>
+                </tr>
+
+                <tr>
+                    <th>Modalidad</th>
+                    <td>Papel u Online</td>
+                </tr>
+
+                <tr>
+                    <th>Reactivos</th>
+                    <td>200 preguntas</td>
+                </tr>
+
+                <tr>
+                    <th>Duración</th>
+                    <td>2 horas 30 minutos</td>
+                </tr>
+
+                <tr>
+                    <th>Resultados</th>
+                    <td>48 horas</td>
+                </tr>
+
+                <tr>
+                    <th>Certificado</th>
+                    <td>15 días hábiles</td>
+                </tr>
+            </table>
+        </div>
+        <div class="contenido-tab" id="cuatro">
+            <div class="encabezado-cert">
+                <img src="img/toeic4.png" alt="">
+                <div>
+                    <h3>Listening, Reading, Speaking & Writing</h3>
+                    <p>Evalúa las cuatro habilidades del idioma.</p>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>Habilidades</th>
+                    <td>Listening, Reading, Speaking y Writing</td>
+                </tr>
+                <tr>
+                    <th>Modalidad</th>
+                    <td>Online</td>
+                </tr>
+                <tr>
+                    <th>Puntuación</th>
+                    <td>495 + 495 + 200 + 200</td>
+                </tr>
+
+                <tr>
+                    <th>Resultados</th>
+                    <td>2 a 3 semanas</td>
+                </tr>
+
+                <tr>
+                    <th>Certificado</th>
+                    <td>30 días hábiles</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</section>
+
+    <section class="calendario-section">
+    <div class="titulo-niveles">
+        <h2>Calendario Escolar</h2>
+        <div class="linea"></div>
+        <p>Consulta las fechas importantes del ciclo escolar.</p>
+    </div>
+    <div class="contenedor-calendario">
+        <img src="img/calendario.jpg" class="imagen-calendario">
+    </div>
+</section>
+
+<script>
+    const menu=document.querySelector(".menu-toggle");
+    const nav=document.querySelector(".nav");
+    menu.onclick=()=>{
+    nav.classList.toggle("active");
+    menu.innerHTML=nav.classList.contains("active")
+    ?'<i class="fa-solid fa-xmark"></i>'
+    :'<i class="fa-solid fa-bars"></i>';
+    }
+    document.querySelectorAll(".nav a").forEach(link=>{
+    link.onclick=()=>{
+    nav.classList.remove("active");
+    menu.innerHTML='<i class="fa-solid fa-bars"></i>';
+    }
+    });
+</script>
+<script>
+const datos = {
+
+BASICO1:{
+titulo:"BÁSICO 1",
+descripcion:"Curso introductorio para desarrollar las primeras habilidades de comunicación en inglés mediante vocabulario y estructuras básicas.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial u Online"
+]
+},
+
+BASICO2:{
+titulo:"BÁSICO 2",
+descripcion:"Fortalece los conocimientos adquiridos y amplía la capacidad para comprender y expresar ideas simples en inglés.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial u Online"
+]
+},
+
+INTER1:{
+titulo:"INTERMEDIO 1",
+descripcion:"Desarrolla una comunicación más fluida en situaciones cotidianas y mejora la comprensión oral y escrita.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial u Online"
+]
+},
+
+INTER2:{
+titulo:"INTERMEDIO 2",
+descripcion:"Refuerza las habilidades comunicativas para desenvolverse con mayor seguridad en diversos contextos.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial u Online"
+]
+},
+
+AVAN1:{
+titulo:"AVANZADO 1",
+descripcion:"Perfecciona la comunicación oral y escrita para entornos académicos y profesionales.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial u Online"
+]
+},
+
+AVAN2:{
+titulo:"Orientado a Certificación",
+descripcion:"Te preparamos para realizar tu certificación internacional de 2 a 4 habilidades.",
+lista:[
+"Duración: 6 meses",
+"Modalidad: Presencial",
+"Tipos de certificados: TOEFL  / TOEIC",
+]
+}
+
+};
+</script>
+<script>
+function cambiarNivel(nivel){
+
+    document.querySelectorAll('.nivel')
+    .forEach(card => card.classList.remove('active'));
+
+    event.currentTarget.classList.add('active');
+
+    const nivelSeleccionado = datos[nivel];
+
+    document.getElementById("titulo").textContent =
+    nivelSeleccionado.titulo;
+
+    document.getElementById("descripcion").textContent =
+    nivelSeleccionado.descripcion;
+
+    document.getElementById("lista").innerHTML =
+    nivelSeleccionado.lista.map(item =>
+    `<li>✔ ${item}</li>`).join('');
+
+    if(nivel === "BASICO1" || nivel === "BASICO2"){
+        document.getElementById("etiqueta").textContent = "A1";
+    }
+
+    if(nivel === "INTER1" || nivel === "INTER2"){
+        document.getElementById("etiqueta").textContent = "A2";
+    }
+
+    if(nivel === "AVAN1" || nivel === "AVAN2"){
+        document.getElementById("etiqueta").textContent = "B1";
+    }
+
+}
+</script>
+<script>
+const cardsModal = document.querySelectorAll(".card-modal");
+cardsModal.forEach(card => {
+    card.addEventListener("click", () => {
+        document.querySelectorAll(".card-modal").forEach(c => {
+            c.classList.remove("active");
+        });
+        card.classList.add("active");
+    });
+});
+const modal = document.getElementById("modalCert");
+document.getElementById("abrirCertificaciones").onclick = function(e){
+    e.preventDefault();
+    modal.classList.add("active");
+}
+document.querySelector(".cerrar-modal").onclick = function(){
+    modal.classList.remove("active");
+}
+window.onclick = function(e){
+    if(e.target == modal){
+        modal.classList.remove("active");
+    }
+}
+const modalToeic = document.getElementById("modalToeic");
+
+function abrirToeic(){
+    modalToeic.style.display="flex";
+}
+
+document.getElementById("cerrarToeic").onclick=function(){
+    modalToeic.style.display="none";
+}
+
+window.onclick=function(e){
+    if(e.target==modalToeic){
+        modalToeic.style.display="none";
+    }
+}
+
+function cambiarTab(id){
+
+    document.querySelectorAll(".contenido-tab").forEach(c=>{
+        c.classList.remove("activo");
+    });
+
+    document.querySelectorAll(".tab").forEach(b=>{
+        b.classList.remove("active");
+    });
+
+    document.getElementById(id).classList.add("activo");
+
+    event.target.classList.add("active");
+
+}
+function abrirToeic(){
+    document.getElementById("modalToeic").style.display = "flex";
+}
+
+function cerrarToeic(){
+    document.getElementById("modalToeic").style.display = "none";
+}
+</script>
+<footer>
+        <div class="footer-container">
+            <p>© 2026 Learn Together - Todos los derechos reservados</p>
+            <div class="footer-links">
+                <a href="ubicacion.html">Ubicación</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
