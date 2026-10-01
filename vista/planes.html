@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/planes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Learn Together</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <a href="index.html" class="logo-link">
+                <img src="img/logoLT.png" class="logo">
+                <h1>Learn Together</h1>
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav">
+            <a href="nosotros.html"><i class="fa-solid fa-users"></i> Nosotros</a>
+            <a href="campus.html"><i class="fa-solid fa-laptop"></i>Campus Virtual</a>
+            <a href="experiencias.html" class="activo"><i class="fa-solid fa-star"></i>Experiencias</a>
+            <a href="planes.html"><i class="fa-solid fa-tags"></i>Planes</a>
+        </nav>
+    </header>
+<main class="contenedor-principal">
+        <section class="seccion-principal-bloque seccion-encabezado-planes">
+            <h2 class="titulo-planes">Nuestros Planes de Estudio</h2>
+            <p class="subtitulo-planes">Elige la modalidad que mejor se adapte a tus necesidades y ritmo de vida.</p>
+            
+            <div class="selectores-modalidad">
+                
+                <button class="btn-modalidad active" onclick="cambiarModalidad(this, 'presencial')">Clases Presenciales</button>
+                <button class="btn-modalidad" onclick="cambiarModalidad(this, 'online')">Clases Online</button>
+                <button class="btn-modalidad" onclick="cambiarModalidad(this, 'familiar')">Plan Familiar</button>
+                <button class="btn-modalidad" onclick="cambiarModalidad(this, 'empresa')">Plan Empresa</button>
+            </div>
+        </section>
+
+        <section class="contenedor-tarjetas">
+            
+            <div id="mod-presencial" class="bloque-modalidad active">
+                <div class="tarjeta-precio">
+                    <span class="modalidad-tag">MODALIDAD PRESENCIAL</span>
+                    <h3 class="tipo-plan">Precio Grupal</h3>
+                    <div class="precio-block">
+                        <span class="monto">$1,200 MXN</span>
+                        <span class="monto-secundario">$60 USD</span>
+                        <span class="monto-secundario">$240,000 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Instalaciones e infraestructura adecuadas para tu desarrollo.</li>
+                        <li><i class="fa-solid fa-check"></i> Convivencia directa y aprendizaje guiado con tus profesores.</li>
+                        <li><i class="fa-solid fa-check"></i> Acceso a <strong>Club Conversacional</strong> y actividades extracurriculares.</li>
+                        <li><i class="fa-solid fa-check"></i> Ambiente inspirador diseñado para el aprendizaje colaborativo.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+
+                <div class="tarjeta-precio destacado">
+                    <span class="modalidad-tag">MODALIDAD PRESENCIAL</span>
+                    <h3 class="tipo-plan">Personalizado</h3>
+                    <div class="precio-block">
+                        <span class="monto">$1,700 MXN</span>
+                        <span class="monto-secundario">$85 USD</span>
+                        <span class="monto-secundario">$340,000 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Asesoría personalizada uno a uno con docentes calificados.</li>
+                        <li><i class="fa-solid fa-check"></i> Clases adaptadas a tus necesidades de aprendizaje.</li>
+                        <li><i class="fa-solid fa-check"></i> Clases híbridas.</li>
+                        <li><i class="fa-solid fa-check"></i> Técnicas modernas y dinámicas que hacen cada clase única.</li>
+                        <li><i class="fa-solid fa-check"></i> Flexibilidad total de horarios en nuestras aulas físicas.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+            </div>
+
+
+            <div id="mod-online" class="bloque-modalidad">
+                <div class="tarjeta-precio">
+                    <span class="modalidad-tag">ONLINE (3 HORAS)</span>
+                    <h3 class="tipo-plan">Precio Grupal</h3>
+                    <div class="precio-block">
+                        <span class="monto">$1,000 MXN</span>
+                        <span class="monto-secundario">$50 USD</span>
+                        <span class="monto-secundario">$200,000 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Clases impartidas en tiempo real mediante la <strong>plataforma Teams</strong>.</li>
+                        <li><i class="fa-solid fa-check"></i> Grupos reducidos que permiten una atención más estructurada.</li>
+                        <li><i class="fa-solid fa-check"></i> Dinámicas interactivas: donde la diversión y el aprendizaje se encuentran.</li>
+                        <li><i class="fa-solid fa-check"></i> Conéctate con otros apasionados en un ambiente colaborativo.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+
+                <div class="tarjeta-precio destacado">
+                    <span class="modalidad-tag">ONLINE (3 HORAS)</span>
+                    <h3 class="tipo-plan">Personalizado</h3>
+                    <div class="precio-block">
+                        <span class="monto">$1,500 MXN</span>
+                        <span class="monto-secundario">$75 USD</span>
+                        <span class="monto-secundario">$300,000 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Asesoría personalizada uno a uno con docentes calificados.</li>
+                        <li><i class="fa-solid fa-check"></i> Apoyo constante para resolver tus dudas de forma inmediata.</li>
+                        <li><i class="fa-solid fa-check"></i> Clases impartidas en la plataforma Microsoft Teams.</li>
+                        <li><i class="fa-solid fa-check"></i> Clases personalizadas según tu nivel actual y objetivos específicos.</li>
+                        <li><i class="fa-solid fa-check"></i> Elige tus horas ideales y aprende cómodamente desde donde estés.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+            </div>
+
+         
+            <div id="mod-familiar" class="bloque-modalidad">
+                <div class="tarjeta-precio">
+                    <span class="modalidad-tag">PLAN FAMILIAR (4 INTEGRANTES)</span>
+                    <h3 class="tipo-plan">Precio Familiar</h3>
+                    <div class="precio-block">
+                        <span class="monto">$3,600 MXN</span>
+                        <span class="monto-secundario">$207.61 USD</span>
+                        <span class="monto-secundario">$716,144 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Paquete de acceso válido para hasta 4 miembros directos de la familia.</li>
+                        <li><i class="fa-solid fa-check"></i> Flexibilidad horaria coordinada para avance conjunto o separado.</li>
+                        <li><i class="fa-solid fa-check"></i> Reportes mensuales de rendimiento integral para todo el grupo familiar.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+
+                <div class="tarjeta-precio destacado">
+                    <span class="modalidad-tag">PLAN FAMILIAR (6 INTEGRANTES)</span>
+                    <h3 class="tipo-plan">Familiar Premium</h3>
+                    <div class="precio-block">
+                        <span class="monto">$4,800 MXN</span>
+                        <span class="monto-secundario">$276.82 USD</span>
+                        <span class="monto-secundario">$954,859 COP</span>
+                        <span class="periodo">cada 4 semanas</span>
+                    </div>
+                    <div class="costos-adicionales">
+                        <p><strong>Inscripción única:</strong> $250 MXN</p>
+                        <p><strong>Material didáctico:</strong> ¡Sin costo!</p>
+                    </div>
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> Paquete de acceso premium válido para hasta 6 miembros de la familia.</li>
+                        <li><i class="fa-solid fa-check"></i> Seguimiento personalizado e individualizado para cada integrante.</li>
+                        <li><i class="fa-solid fa-check"></i> Clases enfocadas en los diferentes rangos de edad del grupo.</li>
+                        <li><i class="fa-solid fa-check"></i> Horarios preferenciales adaptables para no interferir con su rutina.</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+            </div>
+ 
+            <div id="mod-empresa" class="bloque-modalidad">
+                <div class="tarjeta-precio destacado">
+                    <span class="modalidad-tag">PLAN EMPRESA</span>
+                    <h3 class="tipo-plan">Paquete Corporativo</h3>
+                    
+                    <div class="precio-block">
+                        
+                        <span class="monto">$</span>
+                        <span class="monto-secundario">Precios Especiales</span>
+                        <span class="periodo">Paquetes familiares de 4 personas</span>
+                    </div>
+
+
+                    <ul class="lista-beneficios">
+                        <li><i class="fa-solid fa-check"></i> <strong>Clases:</strong> Semipersonalizadas</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Duración:</strong> 3 horas a la semana</li>
+                    </ul>
+                    <a class="btn-inscribete">Próximamente</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="seccion-principal-bloque faq-section">
+            <h2>PREGUNTAS FRECUENTES</h2>
+            <div class="faq-box">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Qué pasa si me retraso en un pago?
+                        <span class="faq-icono">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tienes que pagar el 10% del total entre 1 a 5 días de retraso, de 6 a 15 días el cargo es del 25%.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿La emisión de constancias, diplomas, o certificados al final del curso tiene un costo extra?
+                        <span class="faq-icono">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, cada tipo de certificación oficial tiene su propio costo estipulado al concluir el nivel.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Tengo que volver a pagar inscripción si suspendo el curso y regreso meses después?
+                        <span class="faq-icono">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, los alumnos que reingresan no vuelven a pagar costo de inscripción institucional.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        ¿Cómo funciona si deseo cambiar de modalidad (Presencial/Online)?
+                        <span class="faq-icono">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Es muy sencillo, igual solo esperas tu fecha de vencimiento actual para poder pagar y dar de alta tu nueva modalidad elegida.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Learn Together - Todos los derechos reservados</p>
+            <div class="footer-links">
+                <a href="ubicacion.html">Ubicación</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        const menu = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav");
+        menu.onclick = () => {
+            nav.classList.toggle("active");
+            menu.innerHTML = nav.classList.contains("active")
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        }
+
+        document.querySelectorAll(".nav a").forEach(link => {
+            link.onclick = () => {
+                nav.classList.remove("active");
+                menu.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
+        });
+
+
+        function cambiarModalidad(elemento, modalidad) {
+            
+            const botones = document.querySelectorAll('.btn-modalidad');
+            botones.forEach(btn => btn.classList.remove('active'));
+            
+
+            elemento.classList.add('active');
+
+
+            const bloques = document.querySelectorAll('.bloque-modalidad');
+            bloques.forEach(bloque => bloque.classList.remove('active'));
+
+
+            const bloqueSeleccionado = document.getElementById('mod-' + modalidad);
+            if (bloqueSeleccionado) {
+                bloqueSeleccionado.classList.add('active');
+            }
+        }
+
+
+        function cambiarMetodoPago(metodo) {
+            const tabs = document.querySelectorAll('.tab-pago');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            
+            event.currentTarget.classList.add('active');
+
+            const infoDefecto = document.getElementById('info-pago-por-defecto');
+            const icono = document.getElementById('icono-pago-dinamico');
+            const titulo = document.getElementById('titulo-pago-dinamico');
+            const contenedorBanco = document.getElementById('contenedor-datos-banco');
+
+            if (metodo === 'efectivo') {
+                infoDefecto.style.display = "block";
+                icono.className = "fa-solid fa-wallet";
+                titulo.innerText = "Efectivo";
+                contenedorBanco.className = "datos-banco-oculto";
+            } else if (metodo === 'tarjeta') {
+                infoDefecto.style.display = "block";
+                icono.className = "fa-solid fa-credit-card";
+                titulo.innerText = "Tarjeta de Crédito / Débito";
+                contenedorBanco.className = "datos-banco-oculto";
+            } else {
+                infoDefecto.style.display = "none";
+                contenedorBanco.className = "datos-banco-visible";
+            }
+        }
+
+      
+        document.querySelectorAll('.faq-question').forEach(boton => {
+            boton.addEventListener('click', () => {
+                const itemActual = boton.parentElement;
+                const activo = itemActual.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+                
+                if (!activo) {
+                    itemActual.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
